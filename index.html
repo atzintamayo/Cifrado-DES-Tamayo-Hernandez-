@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DES</title>
+
+</head>
+<body>
+    <h1>Cifrado DES</h1>
+    <div class="container">
+        
+        <div class="divbonito">
+            <p>
+                Sube el archivo que quieres cifrar
+            </p>
+        </div>
+        
+        <div class="marco">
+            <input type="file" value="subir" id="archivo">
+        </div>
+        
+        <div class="divbonito2"> 
+            <p>
+                Ingresa la clave con la que quieres cifrar
+            </p>
+        </div>
+       
+
+        <input type="text" id="clave">
+        
+        <div>
+            <input type="button" onclick="mostrar();" value="Cifrar">
+            <input type="button" onclick="mostrar2();" value="Descifrar">
+        </div>
+    
+        
+        <div id="download"></div>
+    </div>
+    
+   
+    <script src="/crypt.js"></script>
+
+    <script src="/DES.js"></script>
+</body>
+</html>
